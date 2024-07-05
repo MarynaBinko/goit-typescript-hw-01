@@ -12,31 +12,31 @@
 
 
 
-import axios from 'axios';
+// import axios from 'axios';
 
 
-async function fetchData<T>(url: string): Promise<T> {
-  try {
-    const response = await axios.get<T>(url);
-    return response.data;
-  } catch (error) {
-    throw new Error(`Error fetching from ${url}: ${error}`);
-  }
-}
+// async function fetchData<T>(url: string): Promise<T> {
+//   try {
+//     const response = await axios.get<T>(url);
+//     return response.data;
+//   } catch (error) {
+//     throw new Error(`Error fetching from ${url}: ${error}`);
+//   }
+// }
 
 
-interface User {
-  id: number;
-  name: string;
-  email: string;
-}
+// interface User {
+//   id: number;
+//   name: string;
+//   email: string;
+// }
 
-const url = 'https://jsonplaceholder.typicode.com/users/1';
+// const url = 'https://jsonplaceholder.typicode.com/users/1';
 
-fetchData<User>(url)
-  .then(data => {
-    console.log(data); 
-  })
-  .catch(error => {
-    console.error(error.message);
-  });
+// fetchData<User>(url)
+//   .then(data => {
+//     console.log(data); 
+//   })
+//   .catch(error => {
+//     console.error(error.message);
+//   });
