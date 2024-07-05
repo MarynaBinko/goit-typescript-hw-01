@@ -1,56 +1,41 @@
-// type User = {
-//       name: string;
-//       surname: string;
-//       email: string;
-//       password: string;
-//     }
-    
-//     function createOrUpdateUser(initialValues: User) {
-//       // Оновлення користувача
-//     }
-    
-//     createOrUpdateUser({ 
-//       email: 'user@mail.com', 
-//       password: 'password123' 
-//     });
 
     
 
-// type User = {
-//   name: string;
-//   surname: string;
-//   email: string;
-//   password: string;
-// }
+type User = {
+  name: string;
+  surname: string;
+  email: string;
+  password: string;
+}
 
-// function createOrUpdateUser(initialValues: Partial<User>) {
-//    const defaultUser: User = {
-//     name: 'DefaultName',
-//     surname: 'DefaultSurname',
-//     email: 'default@mail.com',
-//     password: 'defaultPassword'
-//   };
+function createOrUpdateUser(initialValues: Partial<User>) {
+   const defaultUser: User = {
+    name: 'DefaultName',
+    surname: 'DefaultSurname',
+    email: 'default@mail.com',
+    password: 'defaultPassword'
+  };
 
-//   const updatedUser: User = {
-//     ...defaultUser,
-//     ...initialValues
-//   };
+  const updatedUser: User = {
+    ...defaultUser,
+    ...initialValues
+  };
 
-//   console.log('Updated User:', updatedUser);
-// }
+  console.log('Updated User:', updatedUser);
+}
 
 
-// createOrUpdateUser({
-//   email: 'user@mail.com',
-//   password: 'password123'
-// });
+createOrUpdateUser({
+  email: 'user@mail.com',
+  password: 'password123'
+});
 
-// createOrUpdateUser({
-//   name: 'John',
-//   surname: 'Doe',
-//   email: 'john.doe@mail.com',
-//   password: 'password456'
-// });
+createOrUpdateUser({
+  name: 'John',
+  surname: 'Doe',
+  email: 'john.doe@mail.com',
+  password: 'password456'
+});
 
 
 
